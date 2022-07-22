@@ -5,10 +5,11 @@ import java.util.Scanner;
 /**
  * "Loteria 'Viciada'"
  *
- * Os jogadores fazem o jogo escolhendo números. Então o programa seleciona uma sequencia dos números menos comuns.
- *  	
- *  
- * @author Renan Moreira
+ *O programa lê uma lista de jogos (cada jogo possui um conjunto de 15 inteiros) e "sorteia" os 5 números menos comuns 
+ *dentre os jogos. Por essa lógica, para que um determinado jogador consiga vencer o jogo é necessário uma quantidade 
+ *muito grande de jogos diversificados.
+ *
+ * * @author Renan Moreira
  *
  */
 public class LoteriaViciada extends Loterica{
@@ -26,7 +27,6 @@ public class LoteriaViciada extends Loterica{
 		System.out.println("==================================================================================");
 		do {
 			System.out.println("-------------------------------------------------------------------------------------");
-
 			System.out.println((contador+1) + "° jogo, faça sua aposta!\n		<Escolha 15 números entre 1 e 25>");
 			for (int i = 0; i < jogo.length; i++) {
 				try {
